@@ -1,81 +1,85 @@
-body{
-    background-color: #0c1022;
-    color: #fff;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background-color: transparent;
-    justify-content: space-between;
-    align-items: 100;
-
-}
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
-} */
-
-.logo{
-    font-size: 25px;
-    color: #fff;
+/* General */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .nav-bar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+  }
+  
+  .nav-link {
+    color: #ccc;
     text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #00ff99;
+  }
+  
+  .social-icons i {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: #ccc;
+  }
+  
+  .social-icons i:hover {
+    color: #00ff99;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    margin-top: 40px;
+  }
+  
+  .profile-hexagon {
+    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+    overflow: hidden;
+    width: 300px;
+    height: 340px;
+    border: 3px solid #00ff99;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-hexagon:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Text */
+  .hello-line {
+    color: #00ff99;
+    font-size: 1.1rem;
     font-weight: 600;
-    position: none;
-}
-
-.navbar a {
-    font-size: 22px;
-    font: bold;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    /* margin-left: 35px;
-    margin-right: 20px; */
-}    
-
-.navbar a:not(:last-child) {
-        margin-right: 40px; /* Adjust the value to add desired space */
-}
-
-.navbar a.active,
-.navbar a:hover
-{
-    background: linear-gradient(45deg,#f06,#3cf);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-}
-
-.home-content h1{
-    font-size: 56px;
-    font-weight: 800;
-    margin-bottom: 0%;
-}
-
-.home-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0%;
-    padding: 0%;
-}
-
-.home-content p{
-    font-size: 16px;
-    font-weight: 700;
-}
-
+  }
+  
+  .highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+  }
+  
+  .hero-text h1 {
+    color: #ffffff;
+  }
+  
+  .tech-icons i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #00ff99;
+  }
+  
+  .cursor {
+    color: #00ff99;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
