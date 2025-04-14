@@ -1,85 +1,140 @@
 /* General */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
-  }
-  
-  /* Navbar */
-  .nav-bar {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid #333;
-  }
-  
-  .nav-link {
-    color: #ccc;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .nav-link:hover {
-    color: #00ff99;
-  }
-  
-  .social-icons i {
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    color: #ccc;
-  }
-  
-  .social-icons i:hover {
-    color: #00ff99;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    margin-top: 40px;
-  }
-  
-  .profile-hexagon {
-    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
-    overflow: hidden;
-    width: 300px;
-    height: 340px;
-    border: 3px solid #00ff99;
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-hexagon:hover {
-    transform: scale(1.03);
-  }
-  
-  /* Text */
-  .hello-line {
-    color: #00ff99;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  
-  .highlight {
-    color: #ff6b6b;
-    font-weight: bold;
-  }
-  
-  .hero-text h1 {
-    color: #ffffff;
-  }
-  
-  .tech-icons i {
-    font-size: 2rem;
-    margin-right: 1rem;
-    color: #00ff99;
-  }
-  
-  .cursor {
-    color: #00ff99;
-    animation: blink 1s steps(2, start) infinite;
-  }
-  
-  @keyframes blink {
-    to {
+  background-color: #EBF2FA;
+  color: #064789;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.nav-bar {
+  background-color: #427AA1;
+  border-bottom: 1px solid #064789;
+}
+
+.nav-link {
+  color: #EBF2FA;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #064789;
+}
+
+/* Social icons */
+.social-icons i {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: #EBF2FA;
+}
+
+.social-icons i:hover {
+  color: #064789;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 40px;
+}
+
+/* Hexagon Profile Image */
+.profile-hexagon {
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  overflow: hidden;
+  width: 300px;
+  height: 340px;
+  border: 3px solid #064789;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.profile-hexagon:hover {
+  transform: scale(1.03);
+}
+
+/* Text styling */
+.hello-line {
+  color: #427AA1;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #064789;
+  font-weight: bold;
+}
+
+.hero-text h1 {
+  color: #064789;
+}
+
+/* Tech Icons */
+.tech-icons i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #427AA1;
+}
+
+.cursor {
+  color: #064789;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
       visibility: hidden;
-    }
   }
-  
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .nav-bar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .form-check-label {
+  color: #ccc;
+}
+
+body.dark-mode .nav-link:hover {
+  color: #00ff99;
+}
+
+body.dark-mode .social-icons i {
+  color: #ccc;
+}
+
+body.dark-mode .social-icons i:hover {
+  color: #00ff99;
+}
+
+body.dark-mode .hello-line {
+  color: #00ff99;
+}
+
+body.dark-mode .highlight {
+  color: #ff6b6b;
+}
+
+body.dark-mode .hero-text h1 {
+  color: #ffffff;
+}
+
+body.dark-mode .tech-icons i {
+  color: #00ff99;
+}
+
+body.dark-mode .cursor {
+  color: #00ff99;
+}
+
+body.dark-mode .profile-hexagon {
+  border: 3px solid #00ff99;
+}
