@@ -12,15 +12,20 @@
 
   <!-- Navbar -->
   <nav class="d-flex justify-content-between align-items-center px-5 py-3 nav-bar">
-    <div class="fw-bold fs-4 text-success">&lt;/&gt; Alok.Dev</div>
+    <div class="fw-bold fs-4">&lt;/&gt; Alok.Dev</div>
     <div class="d-flex align-items-center gap-4">
       <a href="#about" class="nav-link">About Me</a>
-      <a href="#resume" class="nav-link">Resume</a>
+      <button class="btn btn-primary me-2" onclick="handleResume()">Resume</button>
       <a href="#contact" class="nav-link">Contact</a>
       <div class="social-icons ms-3">
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/alok-gupta-me" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/alokg-812" target="_blank"><i class="fab fa-github"></i></a>
         <a href="mailto:24f2002281@ds.study.iitm.ac.in"><i class="fas fa-envelope"></i></a>
+      </div>
+      <!-- Theme Toggle Switch -->
+      <div class="form-check form-switch ms-auto theme-toggle">
+        <input class="form-check-input" type="checkbox" id="themeSwitch">
+        <label class="form-check-label text-light" for="themeSwitch">Dark Mode</label>
       </div>
     </div>
   </nav>
@@ -60,5 +65,8 @@
     </div>
   </section>
 
+  <script src="script.js">
+
+  </script>
 </body>
 </html>
