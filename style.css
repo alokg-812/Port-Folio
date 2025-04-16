@@ -138,3 +138,7 @@ body.dark-mode .cursor {
 body.dark-mode .profile-hexagon {
   border: 3px solid #00ff99;
 }
+
+body.dark-mode #alokdev{
+  color: green;
+}
