@@ -1,144 +1,249 @@
-/* General */
-body {
-  background-color: #EBF2FA;
-  color: #064789;
-  font-family: 'Courier New', Courier, monospace;
-  line-height: 1.6;
+body{
+    background-color: #101820;
+    color: white;
+    font-family: 'JetBrains Mono', 'Fira Sans', monospace;
 }
 
-/* Navbar */
+@media (max-width: 768px) {
+    /* Tablet and mobile tweaks here */
+  }
+  
+  @media (max-width: 480px) {
+    /* Small phones */
+  }
+  
 .nav-bar {
-  background-color: #427AA1;
-  border-bottom: 1px solid #064789;
+    background-color: #00bcd4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.alok-dev{
+    text-decoration: none;
+    transition: color 0.4s ease;
 }
 
 .nav-link {
-  color: #EBF2FA;
-  text-decoration: none;
-  font-weight: 500;
+    color: #101820; /* Contrasting with background */
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 2px;
+    margin-left: -21px;
+    transition: color 0.35s ease;
+}
+
+.nav-link::after, .alok-dev::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after, .alok-dev:hover::after{
+  width: 100%;
 }
 
 .nav-link:hover {
-  color: #064789;
+    color: #ffffff; /* Nice hover effect */
 }
 
-/* Social icons */
-.social-icons i {
-  font-size: 1.4rem;
-  margin-left: 1rem;
-  color: #EBF2FA;
+.nav-items {
+    display: flex;
+    align-items: center;
 }
 
-.social-icons i:hover {
-  color: #064789;
+.alok-dev{
+    color: white;
+    size: 200px;
+    font-size: 30px;
+    align-items: center;
+    margin: 10px;
+    margin-right: 25px;
 }
 
-/* Hero Section */
-.hero-section {
-  margin-top: 40px;
+.sections{
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-/* Hexagon Profile Image */
-.profile-hexagon {
-  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
-  overflow: hidden;
-  width: 300px;
-  height: 340px;
-  border: 3px solid #064789;
-  transition: transform 0.3s ease;
-  background-color: white;
+.home-section {
+    display: grid;
+    grid-template-columns: 4.75fr 7.25fr;
+    align-items: center;
+    gap: 8rem;
+    max-width: 1000px;
+    margin: 80px;
 }
 
-.profile-hexagon:hover {
-  transform: scale(1.03);
+.social-icon{
+    margin: 5px;
+    color: #101820;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
 
-/* Text styling */
+.social-icon:hover {
+    color: #EBF2FA;
+    text-shadow: 0 0 10px #64FFDA;
+    transform: scale(1.2);
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    border: 4px solid #1f2e3a;
+    margin-left: 70px;
+}
+
+.spann{
+    color: #00bcd4;
+    /* color: #64FFDA; */
+}
+
+.info-content {
+    color: #ffffff;
+    align-items: center;
+
+}
+
 .hello-line {
-  color: #427AA1;
-  font-size: 1.1rem;
-  font-weight: 600;
+    font-size: 1.2rem;
+    /* color: #00ff11; */
+    margin-bottom: 0.5rem;
+}
+
+.hello-line .highlight {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-para {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.resume-button {
+    background-color: #64FFDA;      /* Primary teal accent */
+    color: #101820;                 /* Deep navy text for contrast */
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.resume-button:hover {
+    background-color: #00BCD4;      /* Hover - soft cyan */
+    color: #EBF2FA;                 /* Lighter text on hover */
+    transform: translateY(-2px) scale(1.03);
+}
+
+
+
+/* about me section */
+.about-me{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 60px;
+}
+
+#about-me-section {
+    padding: 60px 20px; 
+}
+
+.about-me-header {
+    background-color: #64FFDA;
+    color: black;
+    border-radius: 8px;
+    width: 350px;
+    padding: 5px;
+    font-size: 48px;
+    text-align: center;
+    margin: 50px auto 25px auto;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap; /* mobile responsive */
+}
+
+.about-me-text-img {
+    flex: 1;
+    max-width: 600px;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-me-image img {
+    border-radius: 16px;
+    margin-top: 20px;
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-me-image img:hover {
+    transform: scale(1.05);
+}
+
+
+  .highlight {
+    color: #64ffda;
+    font-weight: bold;
+  }
+  
+
+
+.highlighted-word {
+    background-color: #112240;
+    color: #64FFDA;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
 }
 
 .highlight {
-  color: #064789;
-  font-weight: bold;
+    color: #64FFDA;
+    font-weight: bold;
 }
 
-.hero-text h1 {
-  color: #064789;
+.highlight:hover {
+    background-color: #233554;
+    border-radius: 4px;
+    padding: 0px 5px 0px 5px; /*top right bottom left */
+
 }
 
-/* Tech Icons */
-.tech-icons i {
-  font-size: 2rem;
-  margin-right: 1rem;
-  color: #427AA1;
-}
-
-.cursor {
-  color: #064789;
-  animation: blink 1s steps(2, start) infinite;
-}
-
-@keyframes blink {
-  to {
-      visibility: hidden;
-  }
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-body.dark-mode .nav-bar {
-  background-color: #1e1e1e;
-  border-bottom: 1px solid #333;
-}
-
-body.dark-mode .nav-link,
-body.dark-mode .form-check-label {
-  color: #ccc;
-}
-
-body.dark-mode .nav-link:hover {
-  color: #00ff99;
-}
-
-body.dark-mode .social-icons i {
-  color: #ccc;
-}
-
-body.dark-mode .social-icons i:hover {
-  color: #00ff99;
-}
-
-body.dark-mode .hello-line {
-  color: #00ff99;
-}
-
-body.dark-mode .highlight {
-  color: #ff6b6b;
-}
-
-body.dark-mode .hero-text h1 {
-  color: #ffffff;
-}
-
-body.dark-mode .tech-icons i {
-  color: #00ff99;
-}
-
-body.dark-mode .cursor {
-  color: #00ff99;
-}
-
-body.dark-mode .profile-hexagon {
-  border: 3px solid #00ff99;
-}
-
-body.dark-mode #alokdev{
-  color: green;
+.about-me-extended{
+    margin-top: -135px;
+    max-width: 850px;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
 }
