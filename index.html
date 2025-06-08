@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
     <nav>
@@ -29,12 +30,35 @@
             <div class="hero-content">
                 <div class="hero-text" style="margin-right: -75px;">
                     <h1 style="color: wheat;">Welcome to My Portfolio</h1>
-                    <h1 style="color: white;">Hello! I am Alok</h1>
+                    <h1 style="color: white;">👋Hello! I am Alok</h1>
                     <p>Web Developer | Data Science & Applications Student | Machine Learning Enthusiast</p>
-                    <a href="#contact" class="download-cv" tabindex="0">Download CV</a>
+                    <!-- <a href="#contact" class="download-cv" tabindex="0">Download CV</a> -->
+                    <a href="#" 
+                        class="download-cv" 
+                        tabindex="0" 
+                        onclick="
+                            event.preventDefault(); 
+                            const choice = confirm('Do you want to view the resume or download it? \nPress OK to view, Cancel to download.');
+                            if (choice) {
+                                // View resume in a new tab (GitHub preview)
+                                window.open('https://github.com/alokg-812/Port-Folio/blob/main/assets/doc/my_resume%20(1).pdf', '_blank');
+                            } else {
+                                // Download resume using raw file link
+                                const link = document.createElement('a');
+                                link.href = 'https://github.com/alokg-812/Port-Folio/raw/main/assets/doc/my_resume%20(1).pdf';
+                                link.download = 'Alok_Gupta_Resume.pdf';
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }
+                        ">
+                        Download CV
+                        </a>
+
+
                 </div>
                 <div class="hero-image-container">
-                    <img class="border border rounded-circle" width="400px" height="400px" src="/assets/images/webDeveloperImage.png" alt="Alok's Profile Photo" class="hero-image">
+                    <img class="border border rounded-circle" width="400px" height="400px" src="/Portfolio/public/assets/images/webDeveloperImage.png" alt="Alok's Profile Photo" class="hero-image">
                     <div class="hero-image-overlay"> </div>
                 </div>
             </div>
@@ -42,12 +66,13 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <div class="about-content">
-                <p>Hello! I’m Alok, a passionate Data Science and Applications student at IIT Madras, with a unique fascination for the intersection of history and machine learning. I believe that understanding our past through data-driven insights can empower the creation of smarter, more informed technologies for the future.</p>
-                <p>My academic journey combines rigorous study with hands-on experience — from competitive programming contests on platforms like Codeforces and CodeChef to deep dives into neural networks and natural language processing applied to historical documents.</p>
-                <p>My passion lies in weaving stories from history with cutting-edge AI and data science techniques. For instance, I developed <strong>Renaissance</strong>, a neural network-based research project that digitizes and classifies ancient Indian scripts, helping preserve cultural heritage through machine learning-powered Optical Character Recognition (OCR).</p>
-                <p>With <strong>Enlightenment</strong>, I created an NLP pipeline using transformer models like BERT to translate and modernize historical documents, aiming to improve accessibility for researchers, students, and enthusiasts.</p>
-                <p>Beyond academic projects, I’ve led impactful real-world initiatives like <strong>Guardian of the Roads</strong>, an IoT and machine learning system designed to enhance road safety in Tamil Nadu, presented to government officials including IAS officers. I’m also the lead developer of <strong>PolyglotEd</strong>, an educational platform that translates learning materials into Indian regional languages to make education accessible to underserved communities.</p>
+            <div class="about-content ps-5 pe-5">
+                <p>Hello! I’m Alok, a Data Science and Applications student at IIT Madras, an aspiring web developer passionate about using technology to drive real-world impact across domains like web tech, machine learning, and education.</p>
+                <p>My work blends academic rigor with practical innovation—ranging from building <strong>Guardian of the Roads</strong>, a road safety system powered by real-time simulations and IoT, presented to IAS officers in Tamil Nadu, to developing an <strong>EmergencyCare Dashboard</strong> for guiding users to nearby emergency services in multiple indian native languages (<a href="https://hackvortex.vercel.app/" target="_blank">Live Site</a>), </p>
+                <p>In hackathons like <strong>HackVortex</strong>, <strong>UYIR Road Safety Challenge</strong>, <strong>BuildVerse</strong>, and the <strong>Appian Challenge</strong>, I’ve had the chance to be in the team and craft technical solutions under pressure, focusing on socially relevant problem statements.</p>
+                <p>I’ve also worked on a <strong>House Price Prediction</strong> app using regression models to forecast real estate values (<a href="https://l1-project.vercel.app/" target="_blank">Live Demo</a>), and a just-for-fun <strong>Tower of Hanoi Visualizer</strong> built using HTML, CSS, and JavaScript to teach algorithmic thinking interactively (<a href="https://tower-of-hanoi-fawn.vercel.app/" target="_blank">Try it out</a>).</p>
+                <p>I actively compete on platforms like Codeforces and CodeChef to hone my problem-solving skills, and I enjoy tackling challenges that require both analytical depth and creative design. Whether it’s simplifying complex systems, improving accessibility, or creating engaging tech demos, I’m always exploring how data and code can create meaningful impact.</p>
+                <p>I’m always happy and open to collaborate with like-minded individuals, developers, or teams working on impactful, innovative ideas!</p>
             </div>
         </section>
 
