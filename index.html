@@ -3,112 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>Alok.Dev</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <title>Alok's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Fashion Store/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-
-    
-    <!-- Navbar -->
     <nav>
-        <div class="nav-bar">
-            <a href="#home-section" class="alok-dev">
-                &lt;/&gt; Alok.Dev
-            </a>
-            <div class="sections">
-                <!-- <button>Home</button>
-                <button>Home</button>
-                <button>Home</button>
-                <button>Home</button>
-                <button>Home</button> -->
-
-                <a href="#home-section" class="nav-link nav-home">🏠 Homebase</a>
-                <a href="#about-me-section" class="nav-link nav-about">🧑‍🚀 Who Am I?</a>
-                <a href="#skills-section" class="nav-link nav-skills">🛠️ Toolbox</a>
-                <a href="#projects-section" class="nav-link nav-projects">🚀 My Builds</a>
-                <a href="#contact-me-section" class="nav-link nav-contact">📬 Let’s Talk</a>
-                <!-- <a href="#about" class="nav-link">Base</a> -->
-                <!-- <a href="#about" class="nav-link">Who Am I?</a> -->
-                <!-- <a href="#about" class="nav-link">Toolbox</a> -->
-                <!-- <a href="#about" class="nav-link">My Builds</a> -->
-                <!-- <a href="#about" class="nav-link">Let's Talk</a> -->
-            </div>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/alok-gupta-me" target="_blank"><i class="fab fa-linkedin social-icon"></i></a>
-                <a href="https://github.com/alokg-812" target="_blank"><i class="fab fa-github social-icon"></i></a>
-                <a href="mailto:24f2002281@ds.study.iitm.ac.in"><i class="fa-solid fa-envelope social-icon"></i></a>
-            </div>
-        </div>
+        <ul>
+            <li>
+                <a href="#home" class="active" tabindex="0">&lt;/alok.dev&gt;</a>
+                <span class="dev-emoji">👨‍💻</span>
+            </li>
+            <li><a href="#home" tabindex="0">Home</a></li>
+            <li><a href="#about" tabindex="0">About Me</a></li>
+            <li><a href="#skills" tabindex="0">Skills</a></li>
+            <li><a href="#projects" tabindex="0">Projects</a></li>
+            <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
     </nav>
 
-
-    <!-- Home-Section -->
-    <section id="home-section">
-        <div class="home-section">
-            <div class="profile-photo">
-                <img src="https://raw.githubusercontent.com/alokg-812/Port-Folio/main/images/profile_gpt.png" alt="Profile Photo" width="100%" height="100%">
+    <div class="main-container">
+        <section id="home" class="hero active">
+            <div class="hero-content">
+                <div class="hero-text" style="margin-right: -75px;">
+                    <h1 style="color: wheat;">Welcome to My Portfolio</h1>
+                    <h1 style="color: white;">Hello! I am Alok</h1>
+                    <p>Web Developer | Data Science & Applications Student | Machine Learning Enthusiast</p>
+                    <a href="#contact" class="download-cv" tabindex="0">Download CV</a>
+                </div>
+                <div class="hero-image-container">
+                    <img class="border border rounded-circle" width="400px" height="400px" src="/Portfolio/public/assets/images/webDeveloperImage.png" alt="Alok's Profile Photo" class="hero-image">
+                    <div class="hero-image-overlay"> </div>
+                </div>
             </div>
-            <div class="info-content">
-                <p class="hello-line"><span class="spann">&lt;span&gt;</span> Hey, I’m Alok <span class="spann">&lt;/span&gt;</span></p>
-                <h1>Web Developer</h1>
-                <p class="intro-para">Aspiring Web Developer | <br>IIT Madras |<br>
-                    Building real-world projects with clean design and solid code.</p>
-                <button class="resume-button" onclick="handleResume()">My Resume</button>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I’m Alok, a passionate Data Science and Applications student at IIT Madras, with a unique fascination for the intersection of history and machine learning. I believe that understanding our past through data-driven insights can empower the creation of smarter, more informed technologies for the future.</p>
+                <p>My academic journey combines rigorous study with hands-on experience — from competitive programming contests on platforms like Codeforces and CodeChef to deep dives into neural networks and natural language processing applied to historical documents.</p>
+                <p>My passion lies in weaving stories from history with cutting-edge AI and data science techniques. For instance, I developed <strong>Renaissance</strong>, a neural network-based research project that digitizes and classifies ancient Indian scripts, helping preserve cultural heritage through machine learning-powered Optical Character Recognition (OCR).</p>
+                <p>With <strong>Enlightenment</strong>, I created an NLP pipeline using transformer models like BERT to translate and modernize historical documents, aiming to improve accessibility for researchers, students, and enthusiasts.</p>
+                <p>Beyond academic projects, I’ve led impactful real-world initiatives like <strong>Guardian of the Roads</strong>, an IoT and machine learning system designed to enhance road safety in Tamil Nadu, presented to government officials including IAS officers. I’m also the lead developer of <strong>PolyglotEd</strong>, an educational platform that translates learning materials into Indian regional languages to make education accessible to underserved communities.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!-- About Me Section -->
-
-    <section id="about-me-section">
-        <h2 class="about-me-header">🧑‍🚀Who Am I?</h2>
-        <div class="about-me">
-            <div class="about-me-text">
-                <p class="about-me-text-img">
-                    It all started with a curious click. One day, I was casually browsing the internet when I stumbled upon the <span class="highlight">Inspect Element</span> option — and suddenly, a whole new world opened up in front of me. Lines of HTML, CSS, and JavaScript whispered the secrets of how the web worked, and I knew I had to learn more. 
-                    <br><br>
-                    Fast forward to today — I’m <span class="highlight">Alok</span>, a 20-year-old web developer currently studying Data Science and Applications at <span class="highlight">IIT Madras</span>. I’ve spent countless hours exploring how to turn ideas into functional, beautiful digital experiences. 
-                    <br><br>
-                </p>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-categories">
+                <div class="skills-category">
+                    <h3>🧠 Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Python – Data analysis, web scraping, dashboards, ML</div>
+                        <div class="skill-card" tabindex="0">C/C++ – Academic and competitive programming</div>
+                        <div class="skill-card" tabindex="0">Java – Academic use, exam revision</div>
+                        <div class="skill-card" tabindex="0">Shell Scripting (Bash) – WSL, automation</div>
+                        <div class="skill-card" tabindex="0">HTML/CSS/JavaScript – Frontend (IRCTC clone, Rakshamarg UI)</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>🛠️ Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Git & GitHub – Version control, documentation</div>
+                        <div class="skill-card" tabindex="0">Jupyter Notebooks – Data science workflows</div>
+                        <div class="skill-card" tabindex="0">Emacs (via Snap) – CLI code editing</div>
+                        <div class="skill-card" tabindex="0">WSL – Linux and networking practice</div>
+                        <div class="skill-card" tabindex="0">Vercel – Project deployment (e.g., House Price Prediction)</div>
+                        <div class="skill-card" tabindex="0">Snap – Linux package management</div>
+                        <div class="skill-card" tabindex="0">Bootstrap – UI components and layouts</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>📊 Data Science & ML Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Data Cleaning – Handling missing data, outliers</div>
+                        <div class="skill-card" tabindex="0">EDA – Visualizations and summary stats</div>
+                        <div class="skill-card" tabindex="0">Feature Engineering – e.g., total_area, furnished</div>
+                        <div class="skill-card" tabindex="0">Model Building – Linear Regression, RMSE/R²</div>
+                        <div class="skill-card" tabindex="0">Visualization Tools – Matplotlib, Seaborn, dashboards</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>🌐 Networking & OS Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Linux Commands – Navigation, file management</div>
+                        <div class="skill-card" tabindex="0">System Commands (IITM) – Practical applications</div>
+                        <div class="skill-card" tabindex="0">SSH Practice – Server connections, Git push</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>📚 Academic & Domain Knowledge</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Data Science & Analytics (IITM) – ML, system commands</div>
+                        <div class="skill-card" tabindex="0">Climate Resilience – Urban planning, adaptation</div>
+                        <div class="skill-card" tabindex="0">Road Safety – Expertise via Guardian of the Roads</div>
+                        <div class="skill-card" tabindex="0">Election Forecasting – Data and social analysis</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>💡 Other Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" tabindex="0">Content Writing – Blogs, LinkedIn, pitch decks</div>
+                        <div class="skill-card" tabindex="0">Project Documentation – README, video demos</div>
+                        <div class="skill-card" tabindex="0">Team Collaboration – Hackathons with Akanksha</div>
+                    </div>
+                </div>
             </div>
-            <div class="about-me-image">
-                <img src="https://github.com/alokg-812/Port-Folio/raw/main/assets/images/profile1.jpg" alt="Alok's Profile Photo" width="100%" height="100%">
-<!--                 <img src="https://raw.githubusercontent.com/alokg-812/Port-Folio/main/assets/images/profile1.jpg" alt="Alok's Profile Photo" width="100%" height="100%"> -->
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Hackathon Highlights</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-modal-id="modal-renaissance" tabindex="0">
+                    <div class="project-title">Renaissance</div>
+                    <div class="project-description">Neural network to digitize ancient Indian scripts for cultural preservation.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during HeritageTech Hackathon 2025 – Winner</div>
+                    <div class="project-role"><strong>Role:</strong> Lead Developer</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <div class="project-outcome">Outcome: Winner</div>
+                    <div class="project-links">
+                        <a href="https://github.com/alok/renaissance" class="project-link" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://alok.example.com/renaissance" class="project-link" target="_blank" tabindex="0">Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-modal-id="modal-enlightenment" tabindex="0">
+                    <div class="project-title">Enlightenment</div>
+                    <div class="project-description">NLP pipeline using BERT to translate and modernize historical documents.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during NLP Innovate 2025 – Finalist</div>
+                    <div class="project-role"><strong>Role:</strong> NLP Specialist</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-outcome">Outcome: Finalist</div>
+                    <div class="project-links">
+                        <a href="https://github.com/alok/enlightenment" class="project-link" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://devpost.com/enlightenment" class="project-link" target="_blank" tabindex="0">Devpost</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-modal-id="modal-guardian" tabindex="0">
+                    <div class="project-title">Guardian of the Roads</div>
+                    <div class="project-description">IoT and ML system to enhance road safety in Tamil Nadu, presented to IAS officers.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during Rakshak Hackathon 2025 – Finalist</div>
+                    <div class="project-role"><strong>Role:</strong> Project Lead</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="project-outcome">Outcome: Finalist</div>
+                    <div class="project-links">
+                        <a href="https://github.com/alok/guardian" class="project-link" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://alok.example.com/guardian-certificate" class="project-link" target="_blank" tabindex="0">Certificate</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-modal-id="modal-polygloted" tabindex="0">
+                    <div class="project-title">PolyglotEd</div>
+                    <div class="project-description">Educational platform translating learning materials into Indian regional languages.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during EduTech Hackathon 2025 – Participant</div>
+                    <div class="project-role"><strong>Role:</strong> Lead Developer</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                    <div class="project-outcome">Outcome: Participant</div>
+                    <div class="project-links">
+                        <a href="https://github.com/alok/polygloted" class="project-link" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://alok.example.com/polygloted" class="project-link" target="_blank" tabindex="0">Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-modal-id="modal-competitive" tabindex="0">
+                    <div class="project-title">Competitive Programming</div>
+                    <div class="project-description">Active participation in Codeforces and CodeChef contests, solving complex problems.</div>
+                    <div class="project-hackathon"><span>🏁</span> Competed in CodeStorm 2025 – Top 10</div>
+                    <div class="project-role"><strong>Role:</strong> Solo Competitor</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-outcome">Outcome: Top 10</div>
+                    <div class="project-links">
+                        <a href="https://codeforces.com/profile/alok" class="project-link" target="_blank" tabindex="0">Profile</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500" data-modal-id="modal-ipl" tabindex="0">
+                    <div class="project-title">IPL Auction Simulation</div>
+                    <div class="project-description">Simulated IPL auction with budget management and bidding strategies.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during SPORTIFY IPL Auction 2025 – 2nd Place</div>
+                    <div class="project-role"><strong>Role:</strong> Team Strategist (with Arghya Pal and Maanya Khanna)</div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Google Sheets API</span>
+                    </div>
+                    <div class="project-outcome">Outcome: 2nd Place</div>
+                </div>
             </div>
-        </div>
-        <div class="about-me about-me-text">
-            <p class="about-me-extended">
-                Whether it’s a personal portfolio, or a real-world hackathon project that helps people stay safer on the roads like <span class="highlight">Rakshamarg</span>, I bring the same excitement to every line of code I write. My journey isn't just about learning new frameworks or languages — it’s about solving problems, telling stories through interfaces, and making tech that feels human. 
-                <br><br>    
-                And if you ever find me lost in thought, chances are I’m either debugging something interesting or sipping on a cup of chai, sketching out the next big idea.
-            </p>
-            <p style="color: #00bcd4;">----------------------------------------</p><span style="color: white;">X</span><p style="color: #00bcd4;">----------------------------------------</p>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills-section">
+            <div id="modal-renaissance" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Renaissance</h3>
+                    <img src="https://images.unsplash.com/photo-1551288049-b11d4a0d4108?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Renaissance Screenshot">
+                    <p><strong>Challenges:</strong> Faced data scarcity for ancient scripts; required extensive preprocessing for OCR accuracy.</p>
+                    <p><strong>Learning Outcomes:</strong> Mastered neural network tuning with TensorFlow and improved data augmentation techniques for niche datasets.</p>
+                </div>
+            </div>
 
-    </section>
+            <div id="modal-enlightenment" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Enlightenment</h3>
+                    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Enlightenment Screenshot">
+                    <p><strong>Challenges:</strong> Handling archaic language variations; optimizing BERT for translation accuracy.</p>
+                    <p><strong>Learning Outcomes:</strong> Gained expertise in transformer models and built efficient NLP pipelines with Flask integration.</p>
+                </div>
+            </div>
 
+            <div id="modal-guardian" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Guardian of the Roads</h3>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Guardian of the Roads Screenshot">
+                    <p><strong>Challenges:</strong> Real-time IoT data integration under hackathon time constraints; ensuring ML model accuracy.</p>
+                    <p><strong>Learning Outcomes:</strong> Learned to integrate IoT with Firebase and improved project presentation skills for stakeholders.</p>
+                </div>
+            </div>
 
-    <!-- Projects Section -->
-     <section id="projects-section">
-        <div class="projects-section">
+            <div id="modal-polygloted" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>PolyglotEd</h3>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="PolyglotEd Screenshot">
+                    <p><strong>Challenges:</strong> Supporting multiple Indian languages with limited translation APIs; ensuring UI accessibility.</p>
+                    <p><strong>Learning Outcomes:</strong> Enhanced frontend skills with Vercel deployment and improved multilingual UI design.</p>
+                </div>
+            </div>
 
-        </div>
-     </section>
+            <div id="modal-competitive" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>Competitive Programming</h3>
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Competitive Programming Screenshot">
+                    <p><strong>Challenges:</strong> Solving complex problems under time pressure; optimizing algorithms for efficiency.</p>
+                    <p><strong>Learning Outcomes:</strong> Improved problem-solving speed and deepened understanding of data structures and algorithms.</p>
+                </div>
+            </div>
 
-    <!-- Contact Me Section -->
-     <section id="contact-me-section"></section>
+            <div id="modal-ipl" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3>IPL Auction Simulation</h3>
+                    <img src="https://images.unsplash.com/photo-1508860540-75d970af16d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="IPL Auction Screenshot">
+                    <p><strong>Challenges:</strong> Managing a virtual budget in a dynamic bidding environment; strategizing under pressure.</p>
+                    <p><strong>Learning Outcomes:</strong> Enhanced teamwork and decision-making skills; learned to integrate Google Sheets API for real-time data tracking.</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <p>Interested in collaborating on data science, machine learning, or history-inspired projects? Let’s connect!</p>
+                <p>Email: <a href="mailto:alokg7055@gmail.com" tabindex="0">alokg7055@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/alok-gupta-me" target="_blank" title="LinkedIn" tabindex="0"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/alokg-812" target="_blank" title="GitHub" tabindex="0"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/alokg7055" target="_blank" title="Twitter" tabindex="0"><i class="fab fa-twitter"></i></a>
+                    <a href="https://codeforces.com/profile/historicAlok" target="_blank" title="Codeforces" tabindex="0"><i class="fas fa-code"></i></a>
+                </div>
+                <a href="path/to/your-cv.pdf" class="download-cv" tabindex="0">Download CV</a>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="entry.2005620554" required placeholder="Your Name">
+                        
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="entry.1045781291" required placeholder="Your Email">
+                        
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="entry.839337160" required>
+                            <option value="" disabled selected>Select a Subject</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Job Opportunity">Job Opportunity</option>
+                            <option value="Project Enquiry">Project Enquiry</option>
+                            <option value="General Questions">General Questions</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        
+                        <label for="source">How Did You Find Me?</label>
+                        <select id="source" name="entry.1484087575" required>
+                            <option value="" disabled selected>Select an Option</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="GitHub">GitHub</option>
+                            <option value="Personal Website">Personal Website</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        
+                        <button type="submit">Submit</button>
+                        <p id="form-message" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
 
-    <script src="script.js"></script>
+        // Initialize page
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        const mainContainer = document.querySelector('.main-container');
+        const projectCards = document.querySelectorAll('.project-card');
+        const modals = document.querySelectorAll('.modal');
+        const closeButtons = document.querySelectorAll('.close-btn');
+        let isScrolling = false;
+
+        function showSection(targetId) {
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            const targetSection = document.getElementById(targetId);
+            const targetLink = document.querySelector(`nav a[href="#${targetId}"]`);
+            if (targetSection && targetLink) {
+                targetSection.classList.add('active');
+                targetLink.classList.add('active');
+            }
+        }
+
+        // Handle navigation clicks
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    isScrolling = true;
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                    showSection(targetId);
+                    setTimeout(() => { isScrolling = false; }, 1000);
+                }
+            });
+        });
+
+        // Handle scroll events
+        mainContainer.addEventListener('scroll', () => {
+            if (isScrolling) return;
+
+            const scrollPosition = mainContainer.scrollTop;
+            let currentSectionId = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPosition >= sectionTop - 50 && scrollPosition < sectionTop + sectionHeight - 50) {
+                    currentSectionId = section.id;
+                }
+            });
+
+            if (currentSectionId) {
+                showSection(currentSectionId);
+            }
+        });
+
+        // Handle project card clicks to open modals
+        projectCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (e.target.classList.contains('project-link')) return;
+                const modalId = this.getAttribute('data-modal-id');
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Handle modal close
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close modal when clicking outside
+        modals.forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                const focusedElement = document.activeElement;
+                const focusableElements = document.querySelectorAll('a[href], button, input, select, [tabindex]:not([tabindex="-1"])');
+                const firstFocusable = focusableElements[0];
+                const lastFocusable = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey && focusedElement === firstFocusable) {
+                    e.preventDefault();
+                    lastFocusable.focus();
+                } else if (!e.shiftKey && focusedElement === lastFocusable) {
+                    e.preventDefault();
+                    firstFocusable.focus();
+                }
+            } else if (e.key === 'Enter' && navLinks.includes(document.activeElement)) {
+                e.preventDefault();
+                const targetId = document.activeElement.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    isScrolling = true;
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                    showSection(targetId);
+                    setTimeout(() => { isScrolling = false; }, 1000);
+                }
+            } else if (e.key === 'Escape') {
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        });
+
+        // Form submission to Google Form
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const formMessage = document.getElementById('form-message');
+            const formData = new FormData(form);
+            
+            const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdEThwVfOTkuIBJ9EyyK-ebpjIGrR0b6WIjwQXWb80ZYv24_Q/formResponse';
+            
+            fetch(googleFormUrl, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            })
+            .then(() => {
+                formMessage.textContent = 'Thank you for your submission!';
+                formMessage.classList.add('success');
+                formMessage.style.display = 'block';
+                form.reset();
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                    formMessage.classList.remove('success');
+                }, 3000);
+            })
+            .catch(error => {
+                formMessage.textContent = 'An error occurred. Please try again.';
+                formMessage.classList.add('error');
+                formMessage.style.display = 'block';
+                console.error('Error:', error);
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                    formMessage.classList.remove('error');
+                }, 3000);
+            });
+        });
+
+        // Initialize with Home section visible
+        showSection('home');
+    </script>
 </body>
 </html>
