@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -38,13 +39,13 @@
                         tabindex="0" 
                         onclick="
                             event.preventDefault(); 
-                            const choice = confirm('Do you want to view the resume or download it? \nPress OK to view, Cancel to download.');
+                            let choice = confirm('Do you want to view the resume or download it? \nPress OK to view, Cancel to download.');
                             if (choice) {
                                 // View resume in a new tab (GitHub preview)
                                 window.open('https://github.com/alokg-812/Port-Folio/blob/main/assets/doc/my_resume%20(1).pdf', '_blank');
                             } else {
                                 // Download resume using raw file link
-                                const link = document.createElement('a');
+                                let link = document.createElement('a');
                                 link.href = 'https://github.com/alokg-812/Port-Folio/raw/main/assets/doc/my_resume%20(1).pdf';
                                 link.download = 'Alok_Gupta_Resume.pdf';
                                 document.body.appendChild(link);
@@ -53,9 +54,7 @@
                             }
                         ">
                         Download CV
-                        </a>
-
-
+                    </a>
                 </div>
                 <div class="hero-image-container">
                     <img class="border border rounded-circle" width="400px" height="400px" src="/Portfolio/public/assets/images/webDeveloperImage.png" alt="Alok's Profile Photo" class="hero-image">
@@ -68,7 +67,7 @@
             <h2>About Me</h2>
             <div class="about-content ps-5 pe-5">
                 <p>Hello! I’m Alok, a Data Science and Applications student at IIT Madras, an aspiring web developer passionate about using technology to drive real-world impact across domains like web tech, machine learning, and education.</p>
-                <p>My work blends academic rigor with practical innovation—ranging from building <strong>Guardian of the Roads</strong>, a road safety system powered by real-time simulations and IoT, presented to IAS officers in Tamil Nadu, to developing an <strong>EmergencyCare Dashboard</strong> for guiding users to nearby emergency services in multiple indian native languages (<a href="https://hackvortex.vercel.app/" target="_blank">Live Site</a>), </p>
+                <p>My work blends academic rigor with practical innovation—ranging from building <strong>Guardian of the Roads</strong>, a road safety system powered by real-time simulations and IoT, presented to IAS officers in Coimbatore, Tamil Nadu, to developing an <strong>EmergencyCare Dashboard</strong> for guiding users to nearby emergency services in multiple indian native languages (<a href="https://hackvortex.vercel.app/" target="_blank">Live Site</a>), </p>
                 <p>In hackathons like <strong>HackVortex</strong>, <strong>UYIR Road Safety Challenge</strong>, <strong>BuildVerse</strong>, and the <strong>Appian Challenge</strong>, I’ve had the chance to be in the team and craft technical solutions under pressure, focusing on socially relevant problem statements.</p>
                 <p>I’ve also worked on a <strong>House Price Prediction</strong> app using regression models to forecast real estate values (<a href="https://l1-project.vercel.app/" target="_blank">Live Demo</a>), and a just-for-fun <strong>Tower of Hanoi Visualizer</strong> built using HTML, CSS, and JavaScript to teach algorithmic thinking interactively (<a href="https://tower-of-hanoi-fawn.vercel.app/" target="_blank">Try it out</a>).</p>
                 <p>I actively compete on platforms like Codeforces and CodeChef to hone my problem-solving skills, and I enjoy tackling challenges that require both analytical depth and creative design. Whether it’s simplifying complex systems, improving accessibility, or creating engaging tech demos, I’m always exploring how data and code can create meaningful impact.</p>
@@ -94,7 +93,6 @@
                     <div class="skills-grid">
                         <div class="skill-card" tabindex="0">Git & GitHub – Version control, documentation</div>
                         <div class="skill-card" tabindex="0">Jupyter Notebooks – Data science workflows</div>
-                        <div class="skill-card" tabindex="0">Emacs (via Snap) – CLI code editing</div>
                         <div class="skill-card" tabindex="0">WSL – Linux and networking practice</div>
                         <div class="skill-card" tabindex="0">Vercel – Project deployment (e.g., House Price Prediction)</div>
                         <div class="skill-card" tabindex="0">Snap – Linux package management</div>
@@ -123,7 +121,6 @@
                     <h3>📚 Academic & Domain Knowledge</h3>
                     <div class="skills-grid">
                         <div class="skill-card" tabindex="0">Data Science & Analytics (IITM) – ML, system commands</div>
-                        <div class="skill-card" tabindex="0">Climate Resilience – Urban planning, adaptation</div>
                         <div class="skill-card" tabindex="0">Road Safety – Expertise via Guardian of the Roads</div>
                         <div class="skill-card" tabindex="0">Election Forecasting – Data and social analysis</div>
                     </div>
@@ -133,7 +130,7 @@
                     <div class="skills-grid">
                         <div class="skill-card" tabindex="0">Content Writing – Blogs, LinkedIn, pitch decks</div>
                         <div class="skill-card" tabindex="0">Project Documentation – README, video demos</div>
-                        <div class="skill-card" tabindex="0">Team Collaboration – Hackathons with Akanksha</div>
+                        <div class="skill-card" tabindex="0">Team Collaboration – Hackathons with &nbsp;<a href="https://www.linkedin.com/in/akanksha-priyadarshinee-rath/" style="color: #f4c430; text-decoration: none;">Akanksha</a></div>
                     </div>
                 </div>
             </div>
@@ -143,48 +140,62 @@
             <h2>Projects & Hackathon Highlights</h2>
             <div class="projects-grid">
                 <div class="project-card" data-aos="fade-up" data-modal-id="modal-renaissance" tabindex="0">
-                    <div class="project-title">Renaissance</div>
-                    <div class="project-description">Neural network to digitize ancient Indian scripts for cultural preservation.</div>
-                    <div class="project-hackathon"><span>🏁</span> Built during HeritageTech Hackathon 2025 – Winner</div>
-                    <div class="project-role"><strong>Role:</strong> Lead Developer</div>
+                    <div class="project-title">EmergencyCare</div>
+                    <div class="project-description">A web-based dashboard that helps users quickly locate and access nearby emergency services like hospitals and police stations during critical situations.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during HackVortex Hackathon 2025</div>
+                    <div class="project-role"><strong>Role:</strong> Web Developer</div>
                     <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Javscript</span>
+                        <span class="tech-tag">Bootstrap</span>
                     </div>
-                    <div class="project-outcome">Outcome: Winner</div>
+                    <div class="project-outcome">Outcome: Finalists</div>
                     <div class="project-links">
-                        <a href="https://github.com/alok/renaissance" class="project-link" target="_blank" tabindex="0">GitHub</a>
-                        <a href="https://alok.example.com/renaissance" class="project-link" target="_blank" tabindex="0">Demo</a>
+                        <a href="https://docs.google.com/document/d/1L2gXWHo1hOOCnMHacaV0TUZiLaOw6plNJwI24PmY7GM/edit?usp=sharing" class="project-link" target="_blank" abindex="0">Documentation</a>
+                        <a href="https://hackvortex.vercel.app/" class="project-link" target="_blank" tabindex="0">Demo</a>
                     </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-modal-id="modal-enlightenment" tabindex="0">
-                    <div class="project-title">Enlightenment</div>
-                    <div class="project-description">NLP pipeline using BERT to translate and modernize historical documents.</div>
-                    <div class="project-hackathon"><span>🏁</span> Built during NLP Innovate 2025 – Finalist</div>
-                    <div class="project-role"><strong>Role:</strong> NLP Specialist</div>
+                    <div class="project-title">House Price Prediction</div>
+                    <div class="project-description">A machine learning web app that estimates property prices based on key features like location, area, and amenities in Bengaluru using regression models.</div>
+                    <div class="project-hackathon"><span>🏁</span> Built during L1 Project (Conducted by PWIOI)</div>
+                    <div class="project-role"><strong>Role:</strong> Full-Stack Developer & ML Engineer</div>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Numpy</span>
                         <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML</span>
+                        <!-- <span class="tech-tag">CSS</span> -->
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Vercel</span>
                     </div>
-                    <div class="project-outcome">Outcome: Finalist</div>
+                    <div class="project-outcome">Outcome: No result</div>
                     <div class="project-links">
-                        <a href="https://github.com/alok/enlightenment" class="project-link" target="_blank" tabindex="0">GitHub</a>
-                        <a href="https://devpost.com/enlightenment" class="project-link" target="_blank" tabindex="0">Devpost</a>
+                        <a href="https://github.com/alokg-812/Assignments/tree/main/L1Project_HousePrediction" class="project-link" target="_blank" tabindex="0">GitHub</a>
+                        <a href="https://l1-project.vercel.app/" class="project-link" target="_blank" tabindex="0">Try Yourself?</a>
                     </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-modal-id="modal-guardian" tabindex="0">
                     <div class="project-title">Guardian of the Roads</div>
-                    <div class="project-description">IoT and ML system to enhance road safety in Tamil Nadu, presented to IAS officers.</div>
-                    <div class="project-hackathon"><span>🏁</span> Built during Rakshak Hackathon 2025 – Finalist</div>
-                    <div class="project-role"><strong>Role:</strong> Project Lead</div>
+                    <div class="project-description">IoT and ML system to enhance road safety in Coimbatore, Tamil Nadu, to reduce accidents by detecting <i>accidental hotspots</i> .</div>
+                    <div class="project-hackathon"><span>🏁</span> Built at UYIR Raod Safety Hackathon 2025 – Finals</div>
+                    <div class="project-role"><strong>Role:</strong> Data Engineering</div>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Numpy</span>
+                        <span class="tech-tag">Tkinter(for GUI)</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Frontend</span>
+                        <span class="tech-tag">Figma(for UI design)</span>
+                        <span class="tech-tag">Vercel</span>
                     </div>
                     <div class="project-outcome">Outcome: Finalist</div>
                     <div class="project-links">
@@ -311,36 +322,44 @@
                     <a href="https://twitter.com/alokg7055" target="_blank" title="Twitter" tabindex="0"><i class="fab fa-twitter"></i></a>
                     <a href="https://codeforces.com/profile/historicAlok" target="_blank" title="Codeforces" tabindex="0"><i class="fas fa-code"></i></a>
                 </div>
-                <a href="path/to/your-cv.pdf" class="download-cv" tabindex="0">Download CV</a>
+                <a href="#" 
+                    class="download-cv" 
+                    tabindex="0" 
+                    onclick="
+                        event.preventDefault(); 
+                        choice = confirm('Do you want to view the resume or download it? \nPress OK to view, Cancel to download.');
+                        if (choice) {
+                            // View resume in a new tab (GitHub preview)
+                            window.open('https://github.com/alokg-812/Port-Folio/blob/main/assets/doc/my_resume%20(1).pdf', '_blank');
+                        } else {
+                            // Download resume using raw file link
+                            link = document.createElement('a');
+                            link.href = 'https://github.com/alokg-812/Port-Folio/raw/main/assets/doc/my_resume%20(1).pdf';
+                            link.download = 'Alok_Gupta_Resume.pdf';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }
+                    ">
+                    Download CV
+                </a>
                 <div class="contact-form-container">
-                    <form id="contact-form" class="contact-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="entry.2005620554" required placeholder="Your Name">
-                        
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="entry.1045781291" required placeholder="Your Email">
-                        
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="entry.839337160" required>
-                            <option value="" disabled selected>Select a Subject</option>
-                            <option value="Collaboration">Collaboration</option>
-                            <option value="Job Opportunity">Job Opportunity</option>
-                            <option value="Project Enquiry">Project Enquiry</option>
-                            <option value="General Questions">General Questions</option>
-                            <option value="Others">Others</option>
-                        </select>
-                        
-                        <label for="source">How Did You Find Me?</label>
-                        <select id="source" name="entry.1484087575" required>
-                            <option value="" disabled selected>Select an Option</option>
-                            <option value="LinkedIn">LinkedIn</option>
-                            <option value="GitHub">GitHub</option>
-                            <option value="Personal Website">Personal Website</option>
-                            <option value="Referral">Referral</option>
-                            <option value="Others">Others</option>
-                        </select>
-                        
-                        <button type="submit">Submit</button>
+                    <p> <i><strong>“Let’s Create Something Amazing Together”</strong></i> </p>
+                    <form id="contact-form" class="contact-form p-4 border rounded shadow-sm" action="https://formspree.io/f/manjeyqp" method="POST">
+                        <div class="mb-3">
+                            <!-- <span class="input-group-text"><i class="bi bi-person"></i></span> -->
+                            <label for="name" class="form-label text-start d-block">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" required placeholder="e.g., Alok Gupta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-start d-block">Your Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" required placeholder="e.g., alok@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-start d-block">Your Message</label>
+                            <textarea class="form-control" name="message" id="message" rows="4" required placeholder="Type your message or inquiry here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                         <p id="form-message" class="form-message"></p>
                     </form>
                 </div>
@@ -446,76 +465,6 @@
                     this.style.display = 'none';
                     document.body.style.overflow = 'auto';
                 }
-            });
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Tab') {
-                const focusedElement = document.activeElement;
-                const focusableElements = document.querySelectorAll('a[href], button, input, select, [tabindex]:not([tabindex="-1"])');
-                const firstFocusable = focusableElements[0];
-                const lastFocusable = focusableElements[focusableElements.length - 1];
-
-                if (e.shiftKey && focusedElement === firstFocusable) {
-                    e.preventDefault();
-                    lastFocusable.focus();
-                } else if (!e.shiftKey && focusedElement === lastFocusable) {
-                    e.preventDefault();
-                    firstFocusable.focus();
-                }
-            } else if (e.key === 'Enter' && navLinks.includes(document.activeElement)) {
-                e.preventDefault();
-                const targetId = document.activeElement.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    isScrolling = true;
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                    showSection(targetId);
-                    setTimeout(() => { isScrolling = false; }, 1000);
-                }
-            } else if (e.key === 'Escape') {
-                modals.forEach(modal => {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                });
-            }
-        });
-
-        // Form submission to Google Form
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const form = this;
-            const formMessage = document.getElementById('form-message');
-            const formData = new FormData(form);
-            
-            const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdEThwVfOTkuIBJ9EyyK-ebpjIGrR0b6WIjwQXWb80ZYv24_Q/formResponse';
-            
-            fetch(googleFormUrl, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: formData
-            })
-            .then(() => {
-                formMessage.textContent = 'Thank you for your submission!';
-                formMessage.classList.add('success');
-                formMessage.style.display = 'block';
-                form.reset();
-                setTimeout(() => {
-                    formMessage.style.display = 'none';
-                    formMessage.classList.remove('success');
-                }, 3000);
-            })
-            .catch(error => {
-                formMessage.textContent = 'An error occurred. Please try again.';
-                formMessage.classList.add('error');
-                formMessage.style.display = 'block';
-                console.error('Error:', error);
-                setTimeout(() => {
-                    formMessage.style.display = 'none';
-                    formMessage.classList.remove('error');
-                }, 3000);
             });
         });
 
