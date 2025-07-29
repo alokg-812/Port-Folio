@@ -406,6 +406,8 @@ border-radius: 8px;
 .contact-content a:hover,
 .contact-content a:focus {
     text-decoration: underline;
+    color: #4a2c2a;
+    
 }
 
 .contact-content a:focus {
